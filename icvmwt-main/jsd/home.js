@@ -1,58 +1,79 @@
-var timeOnSlide = 3, 		
-timeBetweenSlides = 1, 	
+const slider = document.querySelector(".slider");
+const nextBtn = document.querySelector(".next-btn");
+const prevBtn = document.querySelector(".prev-btn");
+const slides = document.querySelectorAll(".slide");
+const slideIcons = document.querySelectorAll(".slide-icon");
+const numberOfSlides = slides.length;
+var slideNumber = 0;
 
-    animationstring = 'animation',
-    animation = false,
-    keyframeprefix = '',
-    domPrefixes = 'Webkit Moz O Khtml'.split(' '), 
-    pfx  = '',
-    slidy = document.getElementById("slidy"); 
-if (slidy.style.animationName !== undefined) { animation = true; } 
+//image slider next button
+nextBtn.addEventListener("click", () => {
+  slides.forEach((slide) => {
+    slide.classList.remove("active");
+  });
+  slideIcons.forEach((slideIcon) => {
+    slideIcon.classList.remove("active");
+  });
 
-if( animation === false ) {
-  for( var i = 0; i < domPrefixes.length; i++ ) {
-    if( slidy.style[ domPrefixes[i] + 'AnimationName' ] !== undefined ) {
-      pfx = domPrefixes[ i ];
-      animationstring = pfx + 'Animation';
-      keyframeprefix = '-' + pfx.toLowerCase() + '-';
-      animation = true;
-      break;
-    }
+  slideNumber++;
+
+  if (slideNumber > numberOfSlides - 1) {
+    slideNumber = 0;
   }
-}
 
-if( animation === false ) {
-} else {
-  var images = slidy.getElementsByTagName("img"),
-      firstImg = images[0], 
-      imgWrap = firstImg.cloneNode(false); 
-  slidy.appendChild(imgWrap); 
-  var imgCount = images.length, 
-      totalTime = (timeOnSlide + timeBetweenSlides) * (imgCount - 1), 
-      slideRatio = (timeOnSlide / totalTime)*100, 
-      moveRatio = (timeBetweenSlides / totalTime)*100, 
-      basePercentage = 100/imgCount, 
-      position = 0,
-      css = document.createElement("style"); 
-  css.type = "text/css";
-  css.innerHTML += "#slidy { text-align: left; margin: 0; font-size: 0; position: relative; width: " + (imgCount * 100) + "%;  }\n";
-  css.innerHTML += "#slidy img { float: left; width: " + basePercentage + "%; }\n";
-  css.innerHTML += "@"+keyframeprefix+"keyframes slidy {\n"; 
-  for (i=0;i<(imgCount-1); i++) { // 
-    position+= slideRatio; 
-    css.innerHTML += position+"% { left: -"+(i * 100)+"%; }\n";
-    position += moveRatio;
-    css.innerHTML += position+"% { left: -"+((i+1) * 100)+"%; }\n";
-}
-  css.innerHTML += "}\n";
-  css.innerHTML += "#slidy { left: 0%; "+keyframeprefix+"transform: translate3d(0,0,0); "+keyframeprefix+"animation: "+totalTime+"s slidy infinite; }\n"; // call on the completed keyframe animation sequence
-document.body.appendChild(css); 
-}
+  slides[slideNumber].classList.add("active");
+  slideIcons[slideNumber].classList.add("active");
+});
 
+//image slider previous button
+prevBtn.addEventListener("click", () => {
+  slides.forEach((slide) => {
+    slide.classList.remove("active");
+  });
+  slideIcons.forEach((slideIcon) => {
+    slideIcon.classList.remove("active");
+  });
 
-// for slider
-// let slider = document.getElementById('slidy-container');
-// console.log(window.innerWidth);
-// if(window.innerWidth>=600){
-//     slider.style= `height:60vh;background-size:600px;`
-// }
+  slideNumber--;
+
+  if (slideNumber < 0) {
+    slideNumber = numberOfSlides - 1;
+  }
+
+  slides[slideNumber].classList.add("active");
+  slideIcons[slideNumber].classList.add("active");
+});
+
+//image slider autoplay
+var playSlider;
+
+var repeater = () => {
+  playSlider = setInterval(function () {
+    slides.forEach((slide) => {
+      slide.classList.remove("active");
+    });
+    slideIcons.forEach((slideIcon) => {
+      slideIcon.classList.remove("active");
+    });
+
+    slideNumber++;
+
+    if (slideNumber > numberOfSlides - 1) {
+      slideNumber = 0;
+    }
+
+    slides[slideNumber].classList.add("active");
+    slideIcons[slideNumber].classList.add("active");
+  }, 4000);
+};
+repeater();
+
+//stop the image slider autoplay on mouseover
+slider.addEventListener("mouseover", () => {
+  clearInterval(playSlider);
+});
+
+//start the image slider autoplay again on mouseout
+slider.addEventListener("mouseout", () => {
+  repeater();
+});

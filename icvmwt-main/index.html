@@ -21,6 +21,16 @@
 <link href="css/style.css" rel="stylesheet" type="text/css">
 <link href="cssd/index.css" rel="stylesheet" type="text/css">
 <link href="cssd/home.css" rel="stylesheet" type="text/css">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+    />
 
 <!--x-->
 <link href="cssam/main.css" rel="stylesheet" type="text/css">
@@ -34,6 +44,7 @@
 <link rel="stylesheet" href="cssam/foot.css">
 <link href="cssam/commitee.css" rel="stylesheet" type="text/css">
 <link href="cssam/style.css" rel="stylesheet" type="text/css">
+<link rel="stylesheet" href="slider.css">
 <script type="text/javascript" src="js/js/jquery-1.9.1.min.js"></script>
 <script type="text/javascript" src="js/js/bootstrap.min.js"></script>
 
@@ -148,13 +159,13 @@ margin-left:-10px;
         </div>
       </div>
 
-      <div class="col-sm-4 hid ut" id='fit'>
+      <div class="col-sm-4 hid ut organisation" id='fit'>
         <p>
           <center>
             <h5><b>Jointly Organised By:</b></h5>
-            <h4>Madan Mohan Malaviya University of Technology, Gorakhpur (U.P.) INDIA<br>
+            <h4>Shambhunath Insstitute of Engineering and Technology, Prayagraj (U.P.) INDIA<br>
               &<br>
-              J.K. Institute of Applied Physics and Technology, University of Allahabad<br>
+              Institute Of Engineering and Technology<br>
               &<br>
               Manipal University Jaipur, India</h4>
           </center>
@@ -163,11 +174,11 @@ margin-left:-10px;
       </div>
       <div class="col-sm-4 hid">
          <center>
-        <a href="http://mmmut.ac.in/"><img src="image/mm.png" style='height: 90px; width: 90px;' class='mine'></a>
-        <a href="#"><img src="image/jkia.png" style='height: 90px; width: 90px;' class='mine'></a>
-        <a href="https://jaipur.manipal.edu"> <img src="image/manipo.png" style='height: 90px; width: 90px;'
+        <a href="https://siet.in/"><img src="images/logo-siet.png" style='height: 90px; width: 90px; padding-right: 5px;' class='mine'></a>
+        <a href="https://www.ietlucknow.ac.in/"><img src="images/IET-Lucknow-Logo-modified.png" style='height: 90px; width: 90px; padding-right: 5px;' class='mine'></a>
+        <a href="https://jaipur.manipal.edu"> <img src="images/MANIPAL_logo-modified.png" style='height: 90px; width: 90px; padding-right: 5px;'
             class='mine'></a>
-         <a href="http://www.springer.com/"> <img src="image/ps.png" style='height: 70px; width: 95px;'
+         <a href="http://www.springer.com/"> <img src="image/ps.png" style='height: 70px; width: 95px; border: none;'
             class='mine'></a>
             </center>
 
@@ -178,7 +189,7 @@ margin-left:-10px;
   </header>
 
 
-    <nav class="navbar navbar-inverse" data-spy="affix" data-offset-top="197" style="margin-bottom: 0;">
+    <nav class="navbar navbar-inverse" data-spy="affix" data-offset-top="197" style="margin-bottom: 0; background-color: #002147;">
   
         <div class="container-fluid">
           <div class="navbar-header">
@@ -193,18 +204,18 @@ margin-left:-10px;
             <ul class="nav navbar-nav">
               <li class="active"><a href="index.html">Home</a></li>
              <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#">About Us <span class="caret"></span></a>
-               <ul class="pull dropdown-menu " style="background-color: background-color: rgb(66, 165, 245);">
-                  <li><a href="aboutmmmut.html">MMMUT</a></li>
-                  <li><a href="aboutjk.html">	JKIAPT</a></li>
-                   <li><a href="aboutmani.html">Manipal University</a></li>
-                   <li><a href="https://www.springer.com">Springer</a></li>
+               <ul class="pull dropdown-menu custombag">
+                  <li class="custombag"><a href="aboutmmmut.html">SIET PRAYAGRAJ</a></li>
+                  <li class="custombag"><a href="aboutjk.html">	IET LUCKNOW</a></li>
+                   <li class="custombag"><a href="aboutmani.html">Manipal University</a></li>
+                   <li class="custombag"><a href="https://www.springer.com">Springer</a></li>
                </ul>
         </li>
               <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#">Committee <span class="caret"></span></a>
-               <ul class="pull dropdown-menu " style="background-color: background-color: rgb(66, 165, 245);">
-                   <li><a href="generalcommittee.html">General Chair </a></li>
-                   <li><a href="advisory.html">Advisory Committee </a></li>
-                   <li><a href="technical.html">Technical Program Committee </a></li>
+               <ul class="pull dropdown-menu custombag">
+                   <li class="custombag"><a href="generalcommittee.html">General Chair </a></li>
+                   <li class="custombag"><a href="advisory.html">Advisory Committee </a></li>
+                   <li class="custombag"><a href="technical.html">Technical Program Committee </a></li>
 		   <li><a href="organizing.html">Website Committee </a></li>
                </ul>
         </li>
@@ -225,7 +236,7 @@ margin-left:-10px;
         </div>
       </nav>
 
-<MARQUEE  style="color: red; font-weight: bold;font-size: 20px; font-size: 20px;font-family: "the times new roman"; ">
+<MARQUEE  style="color: red; font-weight: bold;font-size: 20px; font-size: 20px;font-family: 'the times new roman'; ">
     <a href="#" target="_blank" style="color: red; font-weight: bold;">Due to current pandemic situation (COVID-19) worldwide, the organizing committee of ICVMWT-2021 has proposed to facilitate online presentation of accepted papers.</a> &nbsp;|&nbsp; 
     <a href="keyspeaker.html" target="_blank" style="color: red; font-weight: bold;">Keynote Speakers</a> &nbsp;|&nbsp; 
     
@@ -236,12 +247,29 @@ margin-left:-10px;
 
 
     <!-- for automatic slider.. -->
-    <div id="slidy-container">
-        <figure id="slidy">
-            <img class="img10"  src="image/Fui.jpg" alt="eyes">
-            <img class="img10"  src="image/8.jpg" alt="lou">
-            <img class="img10" src="image/5.jpg" alt="lucie-2">
-        </figure>
+    <div class="container" id="slide-container">
+      <div class="slider">
+        <div class="slide active">
+          <a href="#"><img src="image/1.jpg" alt="" /></a>
+        </div>
+        <div class="slide">
+          <a href="#"><img src="image/2.JPG" alt="" /></a>
+        </div>
+        <div class="slide">
+          <a href="#"><img src="image/3.jpg" alt="" /></a>
+        </div>
+        <div class="navigation">
+          <i class="fas fa-chevron-left prev-btn"></i>
+          <i class="fas fa-chevron-right next-btn"></i>
+        </div>
+        <div class="navigation-visibility">
+          <div class="slide-icon active"></div>
+          <div class="slide-icon"></div>
+          <div class="slide-icon"></div>
+          <div class="slide-icon"></div>
+          <div class="slide-icon"></div>
+        </div>
+      </div>
     </div>
 
 
@@ -253,9 +281,9 @@ margin-left:-10px;
 
 
   <center> 
-    <div class='keynote'>
+    <div class='keynote' style="background-color: #002147;">
         <div class="card mx-4" style="width: 18rem;">
-            <img src="image/Cha.png" class="card-img-top img1" alt="...">
+            <img src="image/Cha.png" class="card-img-top img1" alt="image">
             <div class="card-body">
                 <h4 class="card-title">Smt. Anandiben Patel</h4>
                 <p class="card-title">Hon’ble Chancellor & H.E. Governor of U.P.
@@ -264,7 +292,7 @@ margin-left:-10px;
         </div>
 
         <div class="card mx-4" style="width: 18rem;">
-            <img src="image/cm.png" class="card-img-top img1" alt="...">
+            <img src="image/cm.png" class="card-img-top img1" alt="image">
             <div class="card-body">
                 <h4 class="card-title">Shri Yogi Adityanath</h4>
                 <p class="card-title">Hon’ble Chief Minister of U.P.
@@ -273,7 +301,7 @@ margin-left:-10px;
         </div>
 
         <div class="card mx-4" style="width: 18rem;">
-            <img src="image/vc.png" class="card-img-top img1" alt="...">
+            <img src="image/vc.png" class="card-img-top img1" alt="image">
             <div class="card-body">
                 <h4 class="card-title">Prof. J. P. Pandey</h4>
               
@@ -287,7 +315,7 @@ margin-left:-10px;
 
 
 
-<div style="width: 100%; background-color: rgb(22, 30, 49); height: 260px; color: white;">
+<div class="timer" style="width: 100%; background-color: rgb(22, 30, 49); height: 260px; color: white;">
   
     <center><h2><b>Days To Go</b> </h2>
     <div class="divider"></div>
@@ -309,13 +337,12 @@ margin-left:-10px;
         <center>
             <h1>Welcome To ICVMWT-2021</h1>
         </center>
-        <p>It gives us immense pleasure to invite you to join ICVMWT-2021  
+        <p>It gives us immense pleasure to invite you to join ICISSI-2022  
          
           (International Conference On
-          VLSI & Microwave and Wireless Technologies) to be held at one of the most ancient and holy cities of India “Gorakhpur”, Uttar
+           Intelligent Systems and Smart Infrastructure ( ICISSI 2022) to be held at one of the most ancient and holy cities of India "PRAYAGRAJ”, Uttar
             Pradesh from 
-            March 20–21 March, 2021. The conference is being jointly organised by <b>Madan Mohan
-                Malaviya University of Technology Gorakhpur, 
+            21th & 22st April 2022. The conference is being jointly organised by <b>SIET PRAYAGRAJ</b> and <b>IET Lucknow</b>.</p>, 
                  	J.K. Institute of Applied Physics and Technology, University of Allahabad</b> and <b>Manipal University Jaipur</b> with an aim to provide a platform for researchers,
             scientists,
             technocrats, academicians and engineers to exchange their innovative ideas and new challenges being faced in
