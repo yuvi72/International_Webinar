@@ -62,10 +62,11 @@ a:focus, a:hover {
 	text-decoration: none;
 }
 .container {
-	padding: 0;
-	width: 100%;
-	max-width: 1170px;
+	padding: -1px;
+	width: 99%;
+	max-width: 1167px;
 	margin: 0 auto;
+	text-align: c;
 }
 /* Top-Header
 ---------------------------------------------------------------------- */

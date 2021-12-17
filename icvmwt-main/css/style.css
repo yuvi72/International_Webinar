@@ -37,6 +37,16 @@ a {
 .logo a img {
   width: 91%;
 }
+::-webkit-scrollbar {
+  width: 8px;
+}
+::-webkit-scrollbar-track {
+  background: #f2f2f2;
+}
+::-webkit-scrollbar-thumb {
+  background: rgb(172, 172, 172);
+  border-radius: 10px;
+}
 .conf-mail ul {
   margin: 0px;
   padding: 0px;
@@ -193,13 +203,13 @@ a {
   padding-right: 5px !important;
 }
 
-.keynote,
+.keynote {
+  width: 100vw;
+}
+
 .card,
 .timer {
   border-radius: 20px;
-}
-.card {
-  background: rgb(21, 73, 71);
 }
 
 /*.btn-submit{
@@ -1458,4 +1468,8 @@ figure.effect-layla:hover img {
 }
 .publication_table tr {
   border-bottom: 1px solid #efe9e9;
+}
+.img {
+  width: 95%;
+  height: 70vh;
 }
