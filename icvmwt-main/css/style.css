@@ -453,7 +453,8 @@ a {
 .welcome-content-heading {
   width: 100%;
   float: left;
-  background: linear-gradient(to right, #116da0, #d1e4ee);
+  background: rgb(36, 0, 0);
+  background: linear-gradient(90deg, rgba(36, 0, 0, 1) 0%, rgba(9, 9, 121, 0.9671218829328606) 31%, rgba(0, 207, 255, 1) 100%);
   padding: 25px 15px;
 }
 .welcome-content-heading h1 {
@@ -716,7 +717,8 @@ a {
 }
 
 .acade-box {
-  background-color: #337ab7;
+  background: rgb(36, 0, 0);
+  background: linear-gradient(90deg, rgba(36, 0, 0, 1) 0%, rgba(9, 9, 121, 0.9671218829328606) 31%, rgba(0, 207, 255, 1) 100%);
   padding: 15px;
   border-top-left-radius: 15px;
   border-top-right-radius: 15px;

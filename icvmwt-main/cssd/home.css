@@ -23,12 +23,13 @@ body {
 /* for content of box */
 
 #box{
-     background:linear-gradient(#337ab7,white); 
+    background: rgb(36, 0, 0);
+    background: linear-gradient(90deg, rgba(36, 0, 0, 1) 0%, rgba(9, 9, 121, 0.9671218829328606) 31%, rgba(0, 207, 255, 1) 100%);
     box-shadow: 0px 1px 2px 1px rgba(57, 57, 58, 0.9);
     /* border-radius: 10px; */
     /* margin: 50px; */
     padding: 5px;
-    background-color:#cfd9df
+    color: white;
 
 }
 

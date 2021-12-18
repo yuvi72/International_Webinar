@@ -73,7 +73,8 @@ h2 {
   border-top-left-radius: 10px;
   /* border-bottom: 1px solid red; */
   color: white;
-  background: #337ab7;
+  background: rgb(36, 0, 0);
+  background: linear-gradient(90deg, rgba(36, 0, 0, 1) 0%, rgba(9, 9, 121, 0.9671218829328606) 31%, rgba(0, 207, 255, 1) 100%);
 }
 .contain {
   /* border: 2px solid blue; */
