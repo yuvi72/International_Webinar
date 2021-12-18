@@ -56,3 +56,14 @@ console.log(window.innerWidth);
 if (window.innerWidth >= 600) {
     slider.style = `height:60vh;background-size:600px;`
 }
+let deadline = document.getElementById('deadline')
+
+const blink = () => {
+    if (deadline.style.visibility === "hidden") {
+        deadline.style.visibility = "visible";
+    } else {
+        deadline.style.visibility = "hidden";
+    }
+}
+
+setInterval(blink, 500)
