@@ -684,7 +684,7 @@ a {
 .registraion-box {
   width: 100%;
   float: left;
-  padding: 2em 0em;
+  padding: 0em 0em;
 }
 .bs-calltoaction-info {
   position: relative;
@@ -1243,6 +1243,7 @@ figure.effect-layla:hover img {
   background: #001219;
   float: left;
   width: 100%;
+  margin-bottom: 0;
 }
 .copyright p {
   text-align: center;

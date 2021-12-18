@@ -16,16 +16,18 @@ h2 {
 }
 .chair {
   /* border: 2px solid black; */
-  width: 37vw;
-  height: 46vh;
+  width: 35vw;
+  height: 400px;
   border-radius: 10px;
   box-shadow: 5px 5px 5px 4px rgba(57, 57, 58, 1);
-  margin: 20px;
-  padding: 10px;
-  display: flex;
+  margin: 40px;
+  padding: 0px;
   background: #fff;
   flex-wrap: wrap;
   color: #002147;
+  display: grid;
+  align-items: center;
+  justify-content: center;
 }
 .gen {
   /* border: 1px solid red; */
@@ -115,16 +117,16 @@ h2 {
   .vc {
     width: 100%;
   }
-}
-.chief .container {
-  display: -ms-inline-grid;
-  text-align: center;
-}
-.col {
-  margin-left: 19vw;
-}
-.chair {
-  height: auto;
-  max-height: 5ovh;
-  width: 50vw;
+  .chief .container {
+    display: inline-grid;
+    text-align: center;
+  }
+  .col {
+    margin-left: 19vw;
+  }
+  .chair {
+    height: auto;
+    max-height: 5ovh;
+    width: 50vw;
+  }
 }
