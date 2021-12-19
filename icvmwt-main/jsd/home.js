@@ -67,3 +67,8 @@ const blink = () => {
 }
 
 setInterval(blink, 500)
+
+var scrollEventHandler = function () {
+    window.scroll(0, window.pageYOffset)
+}
+window.addEventListener(scroll, scrollEventHandler, false);

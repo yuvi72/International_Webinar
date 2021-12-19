@@ -1476,3 +1476,14 @@ figure.effect-layla:hover img {
   width: 95%;
   height: 70vh;
 }
+
+@media screen and (max-width: 768px) {
+  html,
+  body {
+    width: 100vw;
+    overflow-x: hidden;
+  }
+  .dropdown-toggle {
+    padding-left: 2vw;
+  }
+}
