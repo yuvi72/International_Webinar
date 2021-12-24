@@ -29,6 +29,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
 
   <!--x-->
   <link href="cssam/main.css" rel="stylesheet" type="text/css">
@@ -43,15 +44,17 @@
   <link rel="stylesheet" href="css/timer.css">
   <link href="cssam/commitee.css" rel="stylesheet" type="text/css">
   <link href="cssam/style.css" rel="stylesheet" type="text/css">
+  <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
   <script type="text/javascript" src="js/js/jquery-1.9.1.min.js"></script>
   <script type="text/javascript" src="js/js/bootstrap.min.js"></script>
 
 
 </head>
 <style>
-  body{
-      overflow-x: hidden;
-    }
+  body {
+    overflow-x: hidden;
+  }
+
   .cho {
     font-size: 13px;
     font-family: Georgia, 'Times New Roman', Times, serif;
@@ -64,7 +67,9 @@
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif
   }
 
-  #importantsection, #importantsection > div, #importantsection > div > div {
+  #importantsection,
+  #importantsection>div,
+  #importantsection>div>div {
     min-height: 500px;
   }
 
@@ -161,8 +166,8 @@
 <body>
 
   <header class="container-fluid">
-    <div class="row">
-      <div class="col-sm-4" id='hit'>
+    <div class="row" id="hit">
+      <div class="col-sm-4" data-aos="fade-down-right" data-aos-duration="800">
         <div class="left"><img class="logo1" src="images/LOGO__2_-removebg-preview.png" width="160px;" height="170px;"
             style="margin: top 5px;">
         </div>
@@ -182,7 +187,7 @@
         </div>
       </div>
 
-      <div class="col-sm-4 hid ut organisation" id='fit'>
+      <div class="col-sm-4 hid ut organisation" data-aos="fade-down" data-aos-duration="800">
         <p>
           <center>
             <h5><b>Jointly Organised By:</b></h5>
@@ -192,10 +197,9 @@
               &<br>
               Manipal University Jaipur, India</h4>
           </center>
-
         </p>
       </div>
-      <div class="col-sm-4 hid">
+      <div class="col-sm-4 hid" data-aos="fade-down-left" data-aos-duration="800">
         <center>
           <a href="https://siet.in/"><img src="images/logo-siet.png"
               style='height: 90px; width: 90px; padding-right: 5px;' class='mine'></a>
@@ -206,11 +210,8 @@
           <a href="http://www.springer.com/"> <img src="images/springer-logo-transparent.png"
               style='height: 42px; width: 130px; border: none;' class='mine'></a>
         </center>
-
       </div>
-
     </div>
-
   </header>
 
 
@@ -248,8 +249,6 @@
             </ul>
           </li>
 
-
-
           <li><a href="track.html">Tracks</a></li>
           <li><a href="impd.html">Important Dates</a></li>
           <li><a href="registration.html">Registration</a></li>
@@ -277,44 +276,45 @@
 
   <center>
     <div class='keynote' style="background-color: #002147;">
-      <div class="card mx-3" style="width: 18rem;">
-        <img src="images/vc_aktu.jpg_large" class="card-img-top img1" alt="image">
+      <div class="card mx-3" data-aos="fade-left" data-aos-duration="1000" id="prakatam" style="width: 18rem;">
+        <img src="images/vc_aktu.jpg" class="card-img-top img1" alt="image">
         <div class="card-body">
           <h4 class="card-title">Prof. Vineet Kansal</h4>
-          <p class="card-title">Hon’ble Vice-Chancellor AKTU
+          <p class="card-title">Hon&#8217;ble Vice-Chancellor AKTU
           </p>
         </div>
       </div>
 
-      <div class="card mx-3" style="width: 18rem;">
+      <div class="card mx-3" data-aos="fade-left" data-aos-duration="1000" style="width: 18rem;">
         <img src="images/President_Utthan.jpg" class="card-img-top img1" alt="image">
         <div class="card-body">
           <h4 class="card-title">Dr. D. N. Tewari</h4>
-          <p class="card-title">Hon’ble President - UTTHAN
+          <p class="card-title">Hon&#8217;ble President - UTTHAN
           </p>
         </div>
       </div>
 
-      <div class="card mx-3" style="width: 18rem;">
+      <div class="card mx-3" data-aos="fade-left" data-aos-duration="1000" style="width: 18rem;">
         <img src="images/KK Tiwari sir.jpg" class="card-img-top img1" alt="image">
         <div class="card-body">
           <h4 class="card-title">Dr. K. K. Tewari</h4>
-
-          <p class="card-title"> Hon’ble Secretary - UTTHAN</p>
+          <p class="card-title"> Hon&#8217;ble Secretary -
+            UTTHAN
+          </p>
         </div>
       </div>
 
-      <div class="card mx-3" style="width: 18rem;">
+      <div class="card mx-3" data-aos="fade-left" data-aos-duration="1000" style="width: 18rem;">
         <img src="images/RK SIR.jpg" class="card-img-top img1" alt="image">
         <div class="card-body">
           <h4 class="card-title">Dr. Rakesh Kumar Singh</h4>
-
-          <p class="card-title"> Hon’ble CAO UTTHAN</p>
+          <p class="card-title"> Hon&#8217;ble CAO -
+            UTTHAN
+          </p>
         </div>
       </div>
     </div>
   </center>
-
 
   <div class="head-container">
     <div class="container2">
@@ -335,50 +335,32 @@
     </div>
   </div>
 
-
-
   <!-- for icvwmt content -->
   <div id="box">
-    <center>
-      <h1>Welcome To ICISSI-2022</h1>
-    </center>
-    <p>It gives us immense pleasure to invite you to join ICISSI-2022
-
-      (International Conference On
-      Intelligent Systems and Smart Infrastructure ( ICISSI 2022) to be held at one of the most ancient and holy cities
-      of India "PRAYAGRAJ”, Uttar
-      Pradesh from
-      21th & 22st April 2022. The conference is being jointly organised by <b>Shambhunath Institute of Engineerinng and
-        Technology PRAYAGRAJ</b>,
-      <b>Institute of Engineering and Technology, Lucknow</b>, and <b>Manipal University Jaipur</b> with an aim to
-      provide a platform for researchers, scientists, technocrats, academicians and engineers to exchange their
-      innovative ideas and new challenges being faced in the field of emerging technologies. This conference will be a
-      platform to focus on the core technological developments in the emerging fields like machine learning,
-      intelligence systems, smart infrastructure, advanced power technology etc. </br></br>
-    </p>
-
-
-    <b>Proposed Publishing & Indexing Information:
-      All accepted & presented papers of the conference by duly registered authors will be submitted to Springer book
-      Series “Lecture Notes in Electrical Engineering (LNEE)” (https://www.springer.com/series/7818) and indexed in EI
-      Compendex and Scopus databases.</b></p>
+    <div>
+      <center>
+        <h1>Welcome To ICISSI-2022</h1>
+        <p>It gives us immense pleasure to invite you to join ICISSI-2022
+          
+        (International Conference On
+        Intelligent Systems and Smart Infrastructure ( ICISSI 2022) to be held at one of the most ancient and holy cities
+        of India "PRAYAGRAJ”, Uttar
+        Pradesh from
+        21th & 22st April 2022. The conference is being jointly organised by <b>Shambhunath Institute of Engineerinng and
+          Technology PRAYAGRAJ</b>,
+        <b>Institute of Engineering and Technology, Lucknow</b>, and <b>Manipal University Jaipur</b> with an aim to
+        provide a platform for researchers, scientists, technocrats, academicians and engineers to exchange their
+        innovative ideas and new challenges being faced in the field of emerging technologies. This conference will be a
+        platform to focus on the core technological developments in the emerging fields like machine learning,
+        intelligence systems, smart infrastructure, advanced power technology etc. </br></br>
+      </p>
+      <p>Proposed Publishing & Indexing Information:
+        All accepted & presented papers of the conference by duly registered authors will be submitted to Springer book
+        Series “Lecture Notes in Electrical Engineering (LNEE)” (https://www.springer.com/series/7818) and indexed in EI
+        Compendex and Scopus databases.</p>
+      </center>
+    </div>
   </div>
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
-    integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
-    crossorigin="anonymous"></script>
-
-
-  <!-- for important dates and links etc.... -->
-
-
-
-
-
-
-
-
-
-
 
   <div class="registraion-box">
     <div class="container">
@@ -387,42 +369,30 @@
       </div>
       <div class="titleline"> </div>
       <div class="row" id="importantsection">
-
         <div class="col-md-4 cta-contents">
-
           <div class="bs-calltoaction-info">
             <div class="acade-box">
               <a target="_blank" class="acade-registr-bttn">IMPORTANT DATES</a>
             </div>
-
-
-            <h5 class="cta-title">
+            <h5 class="cta-title" data-aos="fade-left" data-aos-duration="800">
               <div style="color:black;font-size:20px;"> Paper Submission Open :</div> 22nd December 2021
             </h5>
-            </li>
-            <h8 class="cta-title">
+            <h5 class="cta-title" data-aos="fade-left" data-aos-duration="900">
               <div style="color:black;font-size:20px;"> Paper Submission Deadline :</div> 25th Feburary 2022
-            </h8>
-            </li>
-            <h5 class="cta-title">
+            </h5>
+            <h5 class="cta-title" data-aos="fade-left" data-aos-duration="1000">
               <div style="color:black;font-size:20px;">Notification of Acceptance: </div> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
               10th April 2022
             </h5>
-            </li>
-            <h5 class="cta-title">
+            <h5 class="cta-title" data-aos="fade-left" data-aos-duration="1100">
               <div style="color:black;font-size:20px;"> Camera Ready Paper submission: </div> 17th April 2022
             </h5>
-            </li>
-            <h5 class="cta-title">
+            <h5 class="cta-title" data-aos="fade-left" data-aos-duration="1200">
               <div style="color:black;font-size:20px;">Registration deadline:</div> 17th April 2022
             </h5>
-            </li>
-            <h5 class="cta-title">
+            <h5 class="cta-title" data-aos="fade-left" data-aos-duration="1300">
               <div style="color:black;font-size:20px;"> Conference Dates:</div>21th & 22st April 2022
             </h5>
-            </li>
-
-
           </div>
         </div>
         <div class="col-md-4 cta-contents">
@@ -435,7 +405,7 @@
 
               <a href="https://siet.in/">
                 <li>
-                  <h5 class="cta-title"><u> SIET Website</u></h5>
+                  <h5 class="cta-title"data-aos="fade-left" data-aos-duration="1000"><u> SIET Website</u></h5>
                 </li>
               </a>
               <br><br><br><br><br><br><br><br><br><br><br><br><br><br>
@@ -444,12 +414,7 @@
           </div>
         </div>
 
-
-
-
-
         <div class="col-md-4 cta-contents">
-
           <div class="bs-calltoaction-info">
             <div class="acade-box">
               <a target="_blank" class="acade-registr-bttn">Announcements</a>
@@ -457,7 +422,7 @@
 
             <!-- update the link here -->
             <a href="https://easychair.org/conferences/?conf=icissi2022">
-              <h5 id = "deadline" class="cta-title"><u>Paper submission link is now open</u></h5>
+              <h5 id="deadline" class="cta-title"><u>Paper submission link is now open</u></h5>
               </li>
           </div>
         </div><!-- content end here -->
@@ -475,7 +440,7 @@
        <script type="text/javascript" src="https://www.freevisitorcounters.com/en/home/counter/775838/t/10"></script></center> 
                  -->
     <div class="copyright">
-      <p>Copyright © 2022,All Rights Reserved, Shambhunath Institute Of Engineering and Technology, Prayagraj</p>
+      <p>Copyright &copy; 2022,All Rights Reserved, Shambhunath Institute Of Engineering and Technology, Prayagraj</p>
     </div>
   </div>
 
@@ -487,9 +452,12 @@
 
 </body>
 <script type="text/javascript" src="js/timer.js"></script>
-
 <script src="jsd/home.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
   integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+<script>
+  AOS.init();
+</script>
 
 </html>

@@ -24,6 +24,7 @@
   <link href="css/font-awesome.css" rel="stylesheet" type="text/css">
   <link href="css/jquery.jConveyorTicker.min.css" rel="stylesheet" type="text/css">
   <link href="css/style.css" rel="stylesheet" type="text/css">
+  <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
 
 
 
@@ -92,6 +93,7 @@
     top: 0;
     width: 100%;
     z-index: 9999 !important;
+    position: sticky !important;
   }
 
   .affix+.container-fluid {
@@ -136,8 +138,8 @@
 
 
   <header class="container-fluid">
-    <div class="row">
-      <div class="col-sm-4" id='hit'>
+    <div class="row" id="hit">
+      <div class="col-sm-4" data-aos="fade-down-right" data-aos-duration="800">
         <div class="left"><img class="logo1" src="images/LOGO__2_-removebg-preview.png" width="160px;" height="170px;"
             style="margin: top 5px;">
         </div>
@@ -157,7 +159,7 @@
         </div>
       </div>
 
-      <div class="col-sm-4 hid ut organisation" id='fit'>
+      <div class="col-sm-4 hid ut organisation" data-aos="fade-down" data-aos-duration="800">
         <p>
           <center>
             <h5><b>Jointly Organised By:</b></h5>
@@ -167,10 +169,9 @@
               &<br>
               Manipal University Jaipur, India</h4>
           </center>
-
         </p>
       </div>
-      <div class="col-sm-4 hid">
+      <div class="col-sm-4 hid" data-aos="fade-down-left" data-aos-duration="800">
         <center>
           <a href="https://siet.in/"><img src="images/logo-siet.png"
               style='height: 90px; width: 90px; padding-right: 5px;' class='mine'></a>
@@ -181,11 +182,8 @@
           <a href="http://www.springer.com/"> <img src="images/springer-logo-transparent.png"
               style='height: 42px; width: 130px; border: none;' class='mine'></a>
         </center>
-
       </div>
-
     </div>
-
   </header>
 
 
@@ -475,7 +473,7 @@
 
 
   <div class="copyright">
-    <p>Copyright © 2022,All Rights Reserved, Shambunath Institute of Engineering and Technology, Prayagraj</p>
+    <p>Copyright &copy; 2022,All Rights Reserved, Shambunath Institute of Engineering and Technology, Prayagraj</p>
   </div>
   </div>
 
@@ -488,5 +486,9 @@
 <script type="text/javascript" src="js/timer.js"></script>
 
 <script src="jsd/home.js"></script>
+<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+        AOS.init();
+      </script>
 
 </html>

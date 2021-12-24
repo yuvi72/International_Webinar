@@ -19,6 +19,7 @@ a {
   float: left;
   background: #055d8f;
   padding: 10px 0px;
+  animation: slideup 1s easein;
 }
 .header-top {
   /*border-bottom: 1px solid #d8d8d8;*/
@@ -1486,4 +1487,8 @@ figure.effect-layla:hover img {
   .dropdown-toggle {
     padding-left: 2px;
   }
+}
+.navbar {
+  border-radius: 0px;
+  width: 100vw;
 }

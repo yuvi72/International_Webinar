@@ -72,3 +72,49 @@ var scrollEventHandler = function () {
     window.scroll(0, window.pageYOffset)
 }
 window.addEventListener(scroll, scrollEventHandler, false);
+
+// const isInViewport = elem => {
+//     const distance = elem.getBoundingClientRect();
+//     console.log(distance.top, distance.bottom)
+//     return (
+//         distance.top >= 0 &&
+//         distance.left >= 0 &&
+//         distance.bottom <= (window.innerHeight || document.documentElement.clientHeight) &&
+//         distance.right <= (window.innerWidth || document.documentElement.clientWidth)
+//     );
+// };
+
+// if (isInViewport(document.getElementById("prakatam"))) {
+//     console.log("YES");
+//     prakatam.classList.add("animate__animated")
+//     prakatam.classList.add("animate__fadeInLeft")
+// }
+
+// document.addEventListener("scroll", () => {
+//     let prakatam = document.getElementById("prakatam")
+//     // console.log("YES")
+//     if (isInViewport(prakatam)) {
+//         console.log("YES");
+//         prakatam.classList.add("animate__animated")
+//         prakatam.classList.add("animate__fadeInLeft")
+//     }
+// })
+
+
+// var $window = $(window);
+// var $elem = $(".animation")
+
+// function isScrolledIntoView($elem, $window) {
+//     var docViewTop = $window.scrollTop();
+//     var docViewBottom = docViewTop + $window.height();
+
+//     var elemTop = $elem.offset().top;
+//     var elemBottom = elemTop + $elem.height();
+
+//     return ((elemBottom <= docViewBottom) && (elemTop >= docViewTop));
+// }
+// $(document).on("scroll", function () {
+//     if (isScrolledIntoView($elem, $window)) {
+//         $elem.addClass("animate")
+//     }
+// });
