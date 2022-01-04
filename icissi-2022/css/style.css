@@ -1494,3 +1494,13 @@ figure.effect-layla:hover img {
   border-radius: 0px;
   width: 100vw;
 }
+@media screen and (max-width: 356px) {
+  .associates ul {
+    display: contents;
+  }
+}
+@media screen and (min-width: 356px) {
+  .associates ul {
+    display: inline-flex;
+  }
+}
