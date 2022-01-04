@@ -1174,6 +1174,7 @@ figure.effect-layla:hover img {
   width: 100%;
 }
 .associates {
+  text-align: center;
   padding: 0em;
   /*float:left;*/
   width: 100%;
@@ -1202,9 +1203,9 @@ figure.effect-layla:hover img {
 .associates ul li img {
   width: 145px;
   margin: 10px 0px;
-  border: 1px solid #ececec;
+  /* border: 1px solid #ececec; */
   padding: 10px 20px;
-  box-shadow: 0 1px 2px 0px rgba(0, 0, 0, 0.6), 0 0 1px 0px rgba(255, 255, 255, 0.5);
+  /* box-shadow: 0 1px 2px 0px rgba(0, 0, 0, 0.6), 0 0 1px 0px rgba(255, 255, 255, 0.5); */
 }
 
 .footer {
