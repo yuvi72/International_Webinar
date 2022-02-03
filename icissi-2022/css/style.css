@@ -1504,3 +1504,7 @@ figure.effect-layla:hover img {
     display: inline-flex;
   }
 }
+marquee {
+  font-size: 1.5em;
+  color: red;
+}
