@@ -1482,6 +1482,20 @@ figure.effect-layla:hover img {
 .prop {
   width: 80%;
 }
+.logos {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  column-gap: 5px;
+  align-items: center;
+  justify-content: center;
+}
+.off_logo {
+  width: calc((100vw / 3) / 5);
+}
+.logo4 {
+  grid-area: 3 / span 2;
+  width: calc(((100vw / 3) / 5) * 2);
+}
 
 @media screen and (max-width: 768px) {
   html,
